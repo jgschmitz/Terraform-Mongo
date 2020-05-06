@@ -1,7 +1,7 @@
 aws_access_key = "XXXXXXXXXXXXXXXXXXXX"
 aws_secret_key = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-aws_key_path = "~/.ssh/bosh.pem"
-aws_key_name = "bosh"
+aws_key_path = "~/.ssh/schmitz.pem"
+aws_key_name = "schmitz"
 aws_region = "us-east-1"
 network = "10.10"
 
