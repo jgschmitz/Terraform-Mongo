@@ -1,5 +1,3 @@
-
-
 resource "mongodbatlas_project_ip_whitelist" "test" {
     project_id = <PROJECT-ID>
 
