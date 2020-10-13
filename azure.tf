@@ -1,3 +1,4 @@
+  //this will create a base level mongodb cluster on Atlas
 resource "mongodbatlas_cluster" "test" {
   project_id   = "<YOUR-PROJECT-ID>"
   name         = "test"
