@@ -1,6 +1,6 @@
 resource "mongodbatlas_project_ip_whitelist" "test" {
     project_id = <PROJECT-ID>
-print 1,2,3,4
+print 1,2,3
     whitelist {
       cidr_block = "1.2.3.4/32"
       comment    = "cidr block for tf acc testing"
