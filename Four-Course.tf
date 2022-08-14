@@ -1,3 +1,8 @@
+#In this example, we have deployed four resources to four different platforms: AWS, Kubernetes, 
+#Atlas Mongo DB, and Azure. We first created our EKS Kubernetes cluster. Then we deployed a workload 
+#to that Kubernetes cluster. We created a Mongo DB cluster in Atlas that our workload could connect to. 
+#Finally, we created a DNS entry in Azure DNS to point to our workload in EKS.
+
 terraform {
   required_providers {
     aws = {
@@ -82,9 +87,9 @@ resource mongodbatlas_cluster cluster-test {
   }
   cloud_backup = true
   auto_scaling_disk_gb_enabled = true
-  mongo_db_major_version       = "4.2"
+  mongo_db_major_version       = "5.0"
   provider_name               = "AWS"
-  disk_size_gb                = 100
+  disk_size_gb                = 1024
   provider_instance_size_name = "M40"
 }
 resource azurerm_dns_a_record example {
