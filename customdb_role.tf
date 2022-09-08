@@ -1,7 +1,7 @@
 resource "mongodbatlas_custom_db_role" "test_role" {
   project_id = "<PROJECT-ID>"
   role_name  = "myCustomRole"
-# this is a custom role like a mud slide - and 
+# this is a custom role like a mud slide
   actions {
     action = "UPDATE"
     resources {
