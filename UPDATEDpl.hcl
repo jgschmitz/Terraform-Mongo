@@ -32,8 +32,8 @@ resource "mongodbatlas_cluster" "example_cluster" {
   name                          = "example-cluster"
   provider_name                = "GCP"
   region_name                  = "US_CENTRAL1"
-  instance_size_name           = "M10"
-  mongodb_version              = "4.4"
+  instance_size_name           = "M30"
+  mongodb_version              = "6.0"
   backup_enabled               = true
   auto_scaling_compute_enabled = false
   private_endpoint_enabled     = true
