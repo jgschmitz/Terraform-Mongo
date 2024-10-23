@@ -1,0 +1,21 @@
+apiVersion: atlas.mongodb.com/v1
+kind: AtlasCluster
+metadata:
+  name: example-cluster
+  namespace: mongodb
+spec:
+  projectRef:
+    name: atlas-project
+  clusterSpec:
+    name: example-cluster
+    mongoDBMajorVersion: "6.0"
+    providerSettings:
+      providerName: "AWS"
+    replicationSpecs:
+      - regionConfigs:
+          - regionName: "US_EAST_1"
+            electableNodes: 2
+            readOnlyNodes: 1
+          - regionName: "US_WEST_2"
+            electableNodes: 1
+            readOnlyNodes: 0
